@@ -1,0 +1,49 @@
+{
+    "routes": [
+        {
+            "path": "/api/v1/book",
+            "controller": "controllers.GetBooks",
+            "method": "GET",
+            "auth": true,
+            "parameter": false
+        },
+        {
+            "path": "/api/v1/book",
+            "controller": "controllers.GetBook",
+            "method": "GET",
+            "auth": true,
+            "parameter": true
+        },
+        {
+            "path": "/api/v1/book",
+            "controller": "controllers.NewBook",
+            "method": "POST",
+            "auth": true,
+            "parameter": false
+        },
+        {
+            "path": "/api/v1/book",
+            "controller": "controllers.DeleteBook",
+            "method": "DELETE",
+            "auth": true,
+            "parameter": true
+        },
+        {
+            "path": "/api/v1/book",
+            "controller": "controllers.UpdateBook",
+            "method": "PUT",
+            "auth": true,
+            "parameter": true
+        }
+    ],
+    "databases": [
+        {
+            "type": "dev",
+            "driver": "postgres",
+            "dbname": "databasename",
+            "username": "root",
+            "password": "mypassword",
+            "address": "localhost"
+        }
+    ]
+}
